@@ -1,0 +1,8 @@
+<p>read works!</p>
+
+<h3>Worksheet - Week 5</h3>
+<ul>
+    <li (click)="delWorksheet(i)" *ngFor="let worksheet of worksheets | async; let i = index">
+        <a [href]="worksheet.url" target="_blank">{{worksheet.name}}</a>
+    </li>
+</ul>
